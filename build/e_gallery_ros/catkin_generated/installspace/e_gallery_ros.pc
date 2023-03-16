@@ -1,0 +1,8 @@
+prefix=/home/maximer/dev_ws/install
+
+Name: e_gallery_ros
+Description: Description of e_gallery_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

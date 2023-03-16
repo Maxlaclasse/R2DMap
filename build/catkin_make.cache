@@ -1,0 +1,2 @@
+e_gallery_ros
+-DCATKIN_DEVEL_PREFIX=/home/maximer/dev_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maximer/dev_ws/install -G Unix Makefiles
