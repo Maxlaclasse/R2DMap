@@ -13,7 +13,7 @@ efforts = []
 
 pub = rospy.Publisher('joint_states', JointState, queue_size=10)
 
-rate = rospy.Rate(10)  # 1 Hz
+rate = rospy.Rate(100)  # 1 Hz
 seq = 0
 while not rospy.is_shutdown():
     header = Header(seq=seq, stamp=rospy.Time.now(), frame_id='')
@@ -22,5 +22,5 @@ while not rospy.is_shutdown():
     pub.publish(joint_state)
     seq += 1
     positions[0]=positions[0]+0.1
-    positions[1]=positions[1]+0.1
+    positions[1]=positions[1]+0.05
     rate.sleep()
